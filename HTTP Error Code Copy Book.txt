@@ -1,0 +1,19 @@
+* HTTP Shared Error Code Messages                                     
+ E_APIKEYINVALID...                                                   
+                 C                   'Error: API Key Value Is Invalid'
+ E_APIKEYMISSING...                                                   
+                 C                   'Error: API Key Value ID Missing'
+ E_SESSIONTOKENINVALID...                                             
+                 C                   'Error: Session Token Is Invalid'
+ E_SESSIONTOKENMISSING...                                             
+                 C                   'Error: Session Token Is Missing'
+* HTTP Status Code Values                                             
+ H_OK            C                   CONST(200)                       
+ H_CREATED       C                   CONST(201)                       
+ H_NOCONTENT     C                   CONST(204)                       
+ H_BADREQUEST    C                   CONST(400)                       
+ H_UNAUTHORIZED  C                   CONST(401)                       
+ H_FORBIDDEN     C                   CONST(403)                       
+ H_CONFLICT      C                   CONST(409)                       
+ H_LOGINTIMEOUT  C                   CONST(440)                       
+ H_SERVERERROR   C                   CONST(500)                       

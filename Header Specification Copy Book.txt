@@ -1,0 +1,25 @@
+ ************************************************************************
+ * Primary Header Specifications                                        
+ ************************************************************************                                                     
+H COPYRIGHT('Copyright')   
+H DATFMT(*ISO)                                                          
+H DEBUG(*Yes)                                                           
+H OPTION(*NODEBUGIO:*NOUNREF:*SRCSTMT:*SHOWCPY)                         
+                                                                        
+ ************************************************************************
+ * Program-Specific Header Specifications                               
+ ************************************************************************
+ /If Defined(CALLER)                                                   
+H DFTACTGRP(*No)                                                        
+H ACTGRP(*Caller)                                                       
+ /ElseIf Defined(NEW)                                                  
+H DFTACTGRP(*No)                                                        
+H ACTGRP(*New)                                                          
+ /ElseIf Defined(SERVICE)  
+H NOMAIN PGMINFO(*PCML:*MODULE)
+ /ElseIf Defined(SQL)         
+ * Empty                       
+ /Else                         
+H DFTACTGRP(*No)               
+H ACTGRP('QILE')               
+ /EndIf                         
